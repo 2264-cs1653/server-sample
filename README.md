@@ -25,15 +25,14 @@ will indicate which client sent each message.
 
         $ javac *.java
 
-2. Start the server on one machine (e.g., ritchie):
+2. Start the server on one machine (e.g., `acns-01`):
 
         $ java EchoServer
 
-3. On other machines, connect clients to the server (e.g., on both kernighan and
-thompson; note that the cluster machines can be referred to by one another using
-just their short names):
+3. On other machines, connect clients to the server (e.g., on both `acns-02` and
+`acns-04`):
 
-        $ java EchoClient ritchie
+        $ java EchoClient acns-01.cs.pitt.edu
 
 4. Type messages. The server will echo the messages typed at the client, and
 will indicate which client sent each message.
